@@ -55,8 +55,7 @@ syn match  gringoFunction   "#min"
 syn match  gringoFunction   "#max"
 syn match  gringoFunction   "#count"
 syn match  gringoFunction   "#sum"
-" Note: also matches a & b
-syn match  gringoFunction   "& *_*[a-z]['a-zA-Z0-9_]*"
+syn match  gringoFunction   "\([a-zA-Z0-9_'")]\_s*\)\@<!& *_*[a-z]['a-zA-Z0-9_]*"
 " legacy functions
 syn match  gringoFunction   "#times"
 syn match  gringoFunction   "#abs"
