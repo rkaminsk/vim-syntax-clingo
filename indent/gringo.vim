@@ -1,3 +1,13 @@
+" Vim syntax file
+" Language:    Gringo
+" Maintainer:  Roland Kaminski
+" Last Change: 2020 Jun 29
+"
+" This file includes code from the following files of the vim distribution:
+" - indent/lua.vim
+" - indent/python.vim
+" - indent/prolog.vim
+
 if exists("b:did_indent")
   finish
 endif

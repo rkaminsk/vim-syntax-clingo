@@ -1,3 +1,8 @@
+" Vim syntax file
+" Language:    Gringo
+" Maintainer:  Roland Kaminski
+" Last Change: 2020 Jun 29
+
 if version < 600
    syntax clear
 elseif exists("b:current_syntax")
