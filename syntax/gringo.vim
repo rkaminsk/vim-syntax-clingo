@@ -22,13 +22,13 @@ syn case match
 
 syn match   gringoKeyword  "\*%"
 syn match   gringoComment  +%.*+
-syn region  gringoBlockComment start="%\*" end="\*%"
+syn region  gringoBlockComment start="%\*" end="\*%" fold
 
 syn match   gringoError    "#.*"
 
-syn region  luaCode        matchgroup=gringoKeyword start="#begin_lua" keepend end="#end_lua" contains=@Lua
-syn region  luaCode        matchgroup=gringoKeyword start="#script[ ]*([ ]*lua[ ]*)" keepend end="#end" contains=@Lua
-syn region  pythonCode     matchgroup=gringoKeyword start="#script[ ]*([ ]*python[ ]*)" keepend end="#end" contains=@Python
+syn region  luaCode        matchgroup=gringoKeyword start="#begin_lua" keepend end="#end_lua" contains=@Lua fold
+syn region  luaCode        matchgroup=gringoKeyword start="#script[ ]*([ ]*lua[ ]*)" keepend end="#end" contains=@Lua fold
+syn region  pythonCode     matchgroup=gringoKeyword start="#script[ ]*([ ]*python[ ]*)" keepend end="#end" contains=@Python fold
 
 syn keyword gringoKeyword  #show
 syn keyword gringoKeyword  #const
