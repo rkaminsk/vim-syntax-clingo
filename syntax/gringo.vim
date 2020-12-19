@@ -79,7 +79,7 @@ syn match   gringoVar      "\<_*[A-Z]['a-zA-Z0-9_]*\>'*"
 syn match   gringoOperator "=\|<\|<=\|>\|>=\|=\|==\|!="
 syn match   gringoNumber   "\<[0123456789]*\>"
 syn match   gringoRule     ":-"
-syn match   gringoRule     ":~"
+syn match   gringoRule     ":\~"
 
 syn sync maxlines=500
 
