@@ -30,6 +30,7 @@ syn region  luaCode        matchgroup=gringoKeyword start="#begin_lua" keepend e
 syn region  luaCode        matchgroup=gringoKeyword start="#script[ ]*([ ]*lua[ ]*)" keepend end="#end" contains=@Lua fold
 syn region  pythonCode     matchgroup=gringoKeyword start="#script[ ]*([ ]*python[ ]*)" keepend end="#end" contains=@Python fold
 
+" keywords
 syn keyword gringoKeyword  #show
 syn keyword gringoKeyword  #const
 syn keyword gringoKeyword  #include
@@ -43,6 +44,9 @@ syn keyword gringoKeyword  #minimize
 syn keyword gringoKeyword  #maximize
 syn keyword gringoKeyword  #external
 syn keyword gringoKeyword  #program
+syn keyword gringoKeyword  #edge
+syn keyword gringoKeyword  #project
+syn keyword gringoKeyword  #heuristic
 " legacy keywords
 syn keyword gringoKeyword  #ishift
 syn keyword gringoKeyword  #base
@@ -57,10 +61,12 @@ syn keyword gringoKeyword  #minimise
 syn keyword gringoKeyword  #maximise
 syn keyword gringoKeyword  #compute
 
+" functions
 syn keyword gringoFunction #min
 syn keyword gringoFunction #max
 syn keyword gringoFunction #count
 syn keyword gringoFunction #sum
+syn match   gringoFunction "\(^\s*\)\@=&\s*_*[a-z]['a-zA-Z0-9_]*"
 syn match   gringoFunction "\([a-zA-Z0-9_'")]\_s*\)\@<!& *_*[a-z]['a-zA-Z0-9_]*"
 " legacy functions
 syn keyword gringoFunction #times
