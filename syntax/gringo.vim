@@ -78,7 +78,7 @@ syn keyword gringoFunction #even
 syn keyword gringoFunction #pow
 
 syn region  gringoString   start=+"+ skip=+\\"+ end=+"+
-syn keyword gringoKey      not
+syn match   gringoKey      "\([^'a-zA-Z0-9_]\|^\)\zsnot\ze\([^'a-zA-Z0-9_]\|$\)"
 syn keyword gringoKey      #true
 syn keyword gringoKey      #false
 syn match   gringoVar      "\<_*[A-Z]['a-zA-Z0-9_]*\>'*"
